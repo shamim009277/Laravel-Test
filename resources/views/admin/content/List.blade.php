@@ -37,7 +37,7 @@
                 <div class="card-body">
                    <div class="row">
                        <div class="col-md-12">
-                            <table id="example1" class="table table-striped table-responsive dataTable">
+                            <table id="example1" class="table table-bordered table-hover">
                               <thead>
                               <tr>
                                 <th>Sl</th>
@@ -97,5 +97,23 @@
     <!-- /.content -->
   </div>
 @endsection
+
+@push('scripts')
+
+<script>
+  $(function () {
+    $("#example1").DataTable();
+    $('#example2').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": false,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false,
+    });
+  });
+</script>
+
+@endpush
 
 
