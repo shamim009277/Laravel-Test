@@ -10,8 +10,7 @@
                	  	  <h2 class="heading"><a href="#">{{$video->title}}</a></h2>
 		              <span class="post-date">{{ \Carbon\Carbon::parse($video->created_at)->format('M d yy')}} &bullet; By <b>Admin</b></span>
 		              <div class="large">
-		                <iframe class="mt-30 mb-30 iframe" width="100%" height="320" src="https://www.youtube.com/embed/98ChVWjI6KI
-">
+		                <iframe class="mt-30 mb-30 iframe" width="100%" height="320" src="{{$video->link}}">
                     </iframe>
 		              </div>
 		              
