@@ -27,6 +27,6 @@
    <img src="{{asset('frontend/images/blue.jpg')}}" alt="Nature" style="width:100%;height:320px">
   <div class="content">
     <h1>Demonstrate your Curiosity for Learning</h1>
-    <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei.</p>
+    <p>Knowledge is a familiarity, awareness, or understanding of someone or something, such as facts (propositional knowledge), skills (procedural knowledge), or objects (acquaintance knowledge).</p>
   </div>
 </div>

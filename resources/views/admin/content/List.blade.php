@@ -27,7 +27,7 @@
              <div class="card card-primary card-outline">
                 <div class="card-header">
                    <h3 class="card-title">
-                      <i class="fas fa-edit"></i>
+                      <i class="fa fa-list" aria-hidden="true"></i>
                       Blog List
                     </h3>
                     <div class="card-tools pull-right">
@@ -73,14 +73,14 @@
                                   </td>
                                   <td>
                             @if($post->status==1)
-                                  <a class="btn btn-danger btn-sm" href="{{URL::to('/unactive',$post->id)}}" title="Change Status"><i class="fa fa-thumbs-down" aria-hidden="true"></i></a>
+                                  <a class="btn btn-warning btn-sm" href="{{URL::to('/unactive',$post->id)}}" title="Change Status"><i class="fa fa-thumbs-down" aria-hidden="true"></i></a>
                             @else
                                   <a class="btn btn-info btn-sm" href="{{URL::to('/active',$post->id)}}"><i class="fa fa-thumbs-up" aria-hidden="true"></i></a>
                             @endif
-                                  <a class="btn btn-success btn-sm" href=""><i class="fa fa-thumbs-up" aria-hidden="true"></i></a>
+                                  <a class="btn btn-success btn-sm" href="#"><i class="fas fa-edit" aria-hidden="true"></i></a>
+                                  <a class="btn btn-danger btn-sm" href="#"><i class="fas fa-trash" aria-hidden="true"></i></a>
                                   </td>
-                                  <td></td>
-                                  <td></td>
+                                  
                                 </tr>
                              @endforeach
                               </tbody>

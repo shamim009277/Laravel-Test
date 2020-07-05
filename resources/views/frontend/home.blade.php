@@ -16,7 +16,7 @@
 			                  <i class="fa fa-play-circle-o big_player"></i>
 			               </div>
                            <h2 class="heading"><a href="{{URL::to('/video_post_details',$single_video->id)}}" target="_blank">{{$single_video->title}}</a></h2>
-		                   <span class="post-date">January 20, 2018 &bullet; By <b>Admin</b></span>
+		                   <span class="post-date">{{ \Carbon\Carbon::parse($single_video->created_at)->format('M d yy')}} &bullet; By <b>Admin</b></span>
 		                    <p class="mt-10"><?php echo substr($single_video->description,0,200); ?>...</p>
 		                    <a href="{{URL::to('/video_post_details',$single_video->id)}}" class="btn btn-md btn-success" target="_blank"> Watch Video</a>
 			              </div>
@@ -54,7 +54,7 @@
 		                </a>
 		              </div>
 		              <h2 class="heading"><a href="{{URL::to('/post_details',$single_post->id)}}" target="_blank">{{$single_post->title}}</a></h2>
-		              <span class="post-date">January 20, 2018 &bullet; By <a href="#">Josh Holmes</a></span>
+		              <span class="post-date">{{ \Carbon\Carbon::parse($single_post->created_at)->format('M d yy')}} &bullet; By <b>Admin</b></span>
 		              <p class="mt-30"><?php echo substr($single_post->description,0,200); ?> ....</p>
 		              <a href="{{URL::to('/post_details',$single_post->id)}}" class="btn btn-info btn-md" target="_blank">Read More</a>
 		            </div>

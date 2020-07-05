@@ -3,7 +3,7 @@
        <div class="row">
           <div class="col-md-5 mt-10">
             <h3 class="footer-heading mb-4 text-white">About</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat quos rem ullam, placeat amet.</p>
+            <p style="color:green;">One discipline of epistemology focuses on partial knowledge. In most cases, it is not possible to understand an information domain exhaustively; our knowledge is always incomplete or partial.</p>
             <p><a href="#" class="btn btn-primary pill text-white px-4">Read More</a></p>
           </div>
           <div class="col-md-7 mt-10">

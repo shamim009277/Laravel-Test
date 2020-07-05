@@ -8,7 +8,7 @@
                <div class="col-md-10" style="min-height:720px;">
                	  <div class="blog-with-text">
                	  	  <h2 class="heading"><a href="#">{{$post->title}}</a></h2>
-		              <span class="post-date">January 20, 2018 &bullet; By <a href="#">Josh Holmes</a></span>
+		              <span class="post-date">{{ \Carbon\Carbon::parse($post->created_at)->format('M d yy')}} By &bullet; <b>Admin</b></span>
 		              <div class="large">
 		                <a href="#">
 		                  <img src="{{asset('images/' . $post->image)}}" alt="image" class="image_details">
